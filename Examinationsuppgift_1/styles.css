@@ -1,0 +1,525 @@
+/* ------------------------------ GENERAL SETTINGS ------------------------------ */
+
+@import url('https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300;400;500;600;700;800;900&display=swap');
+
+:root {
+  --color1: #FFFFFF;
+  --color2: #EBEBEB;
+  --color3: #000000;
+  --color4: #777574;
+  --color5: #A9A19E;
+  --color6: #C7DDEA;
+  --color7: #F17949;
+  --color8: #FFB939;
+
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  color-scheme: light;
+}
+
+body {
+  background-color: var(--color2);
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  margin: 0 auto;
+  max-width: 1000px;
+}
+
+main {
+  grid-column: 2;
+}
+
+span {
+  color: var(--color3);
+  font-weight: 900;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Frank Ruhl Libre', sans-serif;
+  margin-bottom: 10px;
+}
+
+h1 {
+  color: #000;
+  font-size: 45px;
+  line-height: 100%;
+}
+
+h2 {
+  color: #FFF;
+  font-size: 45px;
+  line-height: 100%;
+  letter-spacing: -0.9px;
+}
+
+h3 {
+  color: rgba(0, 0, 0, 0.40);
+  font-size: 35px;
+  line-height: 100%;
+  letter-spacing: -0.7px;
+  text-align: center;
+}
+
+h4 {
+  color: rgb(255, 255, 255);
+  font-size: 32px;
+  letter-spacing: -0.64px;
+  text-align: center;
+}
+
+h5, h6 {
+  color: rgba(0, 0, 0, 0.70);
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 20px;
+  text-align: center;
+}
+
+h7 {
+  color: rgba(0, 0, 0, 0.40);
+  text-align: center;
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 18px; 
+}
+
+p {
+  color: rgba(0, 0, 0, 0.60);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+/* ------------------------------ ALL MAIN CODE STARTS HERE ------------------------------ */
+
+/* ------------------------------  HERO SECTION ------------------------------  */
+
+.hero-section {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  height: 544px;
+}
+
+.item1,
+.item2,
+.item3 {
+  min-width: 501px;
+  max-width: 501px;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Fira Sans', Arial, Helvetica, sans-serif;
+}
+
+.item1 {
+  background-color: var(--color6);
+  gap: 20px;
+  grid-column: 1 / span 1;
+  grid-row: 1 / span 2;
+}
+
+.item2 {
+  align-items: center;
+  background-color: var(--color7);
+  grid-column: 2 / span 1;
+  grid-row: 1 / span 1;
+  justify-content: center;
+}
+
+.item3 {
+  align-items: center;
+  background-color: var(--color8);
+  grid-column: 2 / span 1;
+  grid-row: 2 / span 1;
+  justify-content: center;
+}
+
+.image-container {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: -18.2rem;
+}
+
+img {
+  max-height: 279px;
+  max-width: 286px;
+}
+
+button {
+  background: var(--color1);
+  border: none;
+  border-radius: 15px;
+  box-shadow: var(--box-shadow);
+  height: 39px;
+  outline: none;
+  transition: font-weight 0.2s ease;
+  width: 131px;
+}
+
+button:hover {
+  font-weight: 800;
+}
+
+/* ------------------------------  Navigation bar  ------------------------------ */
+
+.navbar {
+  align-items: center;
+  display: grid;
+  font-size: 18px;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: center;
+}
+
+.nav-link {
+  color: var(--color3);
+  font-family: 'Fira Sans', Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  padding: 15px 20px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+a {
+  font-family: 'Fira Sans', Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  line-height: 12px;
+  text-align: center;
+}
+
+.nav-link:hover {
+  background-color: var(--color4);
+  color: var(--color1);
+  font-weight: 800;
+}
+
+/* ------------------------------ WHY SECTION ------------------------------ */
+
+.container-way {
+  width: auto;
+  height: 612px;
+  background: #A9A19E;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr ;
+  padding: 20px;
+  gap: 20px;
+}
+
+.column1 {
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+  gap: 20px;
+  text-align: left;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+
+.column2 {
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: left; 
+  justify-content: center;
+  text-align: left;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.row1 {
+  color: #FFF;
+  font-family: sans-serif;
+  font-size: 45px;
+  font-weight: 900;
+  grid-column: 1;
+  grid-row: 1; 
+  align-items: left;
+}
+
+.button a {
+  text-decoration: none;
+  color: #000;
+}
+
+.paragraph {
+  color: rgba(0, 0, 0, 0.60);
+  font-family: sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  grid-column: 2; 
+  grid-row: 2;
+}
+/* ------------------------------  3 CARDS SECTION ------------------------------  */
+
+.container {
+  display: flex;
+  justify-content: center;
+  left: 3%;
+  align-items: center;
+  margin: 0;
+  position: relative;
+  top: -120px;
+}
+
+.card {
+  background-color: var(--color1);
+  border-radius: 6px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+  height: 308px;
+  margin-right: 50px;
+  padding: 0 20px;
+  width: 256px;
+}
+
+.card:not(:last-child) {
+  margin-right: 50px;
+}
+
+.card .imgContainer {
+  align-items: center;
+  background: var(--color6);
+  border-radius: 4px;
+  display: flex;
+  height: 150px;
+  justify-content: center;
+  object-fit: cover;
+  overflow: hidden;
+  padding: 20px;
+  position: relative;
+  right: 4.5%;
+  top: -20px;
+  width: 236px;
+  z-index: 1;
+}
+
+.card .imgContainer img {
+  height: 400px;
+  object-fit: contain;
+  overflow: hidden;
+  width: 100%;
+}
+
+.card .content {
+  align-items: center;
+  color: var(--color1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+img {
+  position: absolute;
+  margin-top: 15rem;
+}
+
+.card .imgContainer {
+  border-radius: 6px;
+}
+
+.card-one .imgContainer {
+  background: var(--color6);
+}
+
+.card-two .imgContainer {
+  background: var(--color8);
+}
+
+.card-three .imgContainer {
+  background: var(--color7);
+}
+
+/* .card .imgContainer img {
+  height: auto;
+  max-width: 100%;
+} */
+
+
+/* .card .imgContainer */ 
+.img-two .img-three {
+
+  width: 105px; 
+    display: block; 
+    height: auto;
+    max-width: 100%;
+    margin: 0 auto;
+    border-radius: 10%;
+    margin-bottom: 15px;
+}
+
+
+.imgContainer .img-one{
+  position: absolute;
+  margin-top: 240px;
+  height: 200%;
+  width: 100%;
+  object-fit: contain;
+}
+
+.card-one .imgContainer img {
+
+  margin-bottom: 200px;
+  height: 100%;
+  width: 100%; 
+
+}
+
+/* ------------------------------  About Section Styles ------------------------------  */
+
+.about-section {
+  align-items: center;
+  background-color: var(--color8);
+  color: var(--color1);
+  display: flex;
+  justify-content: center;
+  min-height: 612px;
+  padding: 50px;
+  text-align: center;
+}
+
+.about-card {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  padding-bottom: 50px;
+  padding-top: 150px;
+  text-align: center;
+}
+
+.about-info,
+.about-description {
+  padding: 20px;
+}
+
+.about-section {
+  margin-top: -19.5rem;
+}
+
+.container {
+  position: relative;
+  top: -140px;
+  z-index: 2;
+}
+
+/* ------------------------------  GRIDBoxes Section Styles ------------------------------  */
+
+
+.grid-section {
+  display: grid;
+  grid-template-columns: repeat(3, 334px);
+  grid-template-rows: repeat(2, 340px);
+  gap: 0; 
+}
+
+.number{
+  display: flex;
+  justify-content: flex-start;
+  font-size: 35px;
+  color: rgba(0, 0, 0, 0.397);
+}
+
+.square {
+  width: 334px; 
+  height: 340px; 
+  flex-shrink: 0; 
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: center;
+
+
+}
+
+.text {
+  display: flex;
+  justify-content: center;
+  margin-top: 8rem;
+  color: rgba(0, 0, 0, 0.80);
+  text-align: center;
+  font-family: Frank Ruhl Libre;
+  font-size: 45px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 100%; 
+  letter-spacing: -0.9px;
+}
+
+.text1{
+  display: flex;
+  justify-content: center;
+  margin-top: 8rem;
+  color: rgba(0, 0, 0, 0.70);
+  font-family: Fira Sans;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1;
+  align-items: center;
+  justify-content: center;
+
+}
+/* Color the squares individually */
+.square:nth-child(1) {
+  background-color: #C7DDEA;
+}
+
+.square:nth-child(2) {
+  background-color: #fff;
+}
+
+.square:nth-child(3) {
+  background-color: #EBEBEB;
+}
+
+.square:nth-child(4) {
+  background-color: #fff;
+}
+
+.square:nth-child(5) {
+  background-color: #F17949;
+}
+
+.square:nth-child(6) {
+  background-color: #fff;
+}
+/* ------------------------------  UP Section Styles ------------------------------  */
+
+.up {
+  display: flex;
+  flex-direction:column;
+  gap: 5px;
+  background-color: #A9A19E;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.arrow{
+margin-top: -2.5rem;
+}
+
+/* ------------------------------  Footer Styles ------------------------------  */
+
+footer {
+  background: var(--color4);
+  height: 340px;
+}
